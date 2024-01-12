@@ -1,0 +1,32 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    padding-bottom: 100px;
+    padding-left: 64px;
+    padding-right: 64px;
+
+    background: url('../assets/fundo-home.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo {
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 64px;
+    color: var(--white-default);
+}
+
+.texto {
+    font-family: Montserrat;
+    font-size: 24px;
+    color: var(--white-default);
+    width: 680px;
+}
+
+.buttons{
+    display: flex;
+    gap: 28px;
+}

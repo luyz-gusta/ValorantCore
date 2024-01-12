@@ -1,0 +1,45 @@
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.logo-riot{
+    width: 84px;
+    height: 36px;
+}
+
+.logo-valorant{
+    width: 40px;
+    height: 32px;
+}
+
+strong {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: var(--white-default);
+}
+
+.divisoria {
+    width: 2px;
+    height: 36px;
+    background-color: var(--white-default);
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+.icon-media{
+    font-size: 32px;
+    color: var(--white-default);
+    transition: all .5s;
+}
+
+.icon-media:hover{
+    color: var(--red-primary);
+}
