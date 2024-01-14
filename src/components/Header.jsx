@@ -21,7 +21,7 @@ function Header(){
 
     return(
         <header>
-            <img src={require('../assets/logo-riot.png')} alt="logo da empresa riot games"></img>
+            <img src={require('../assets/logo-riot.png')} alt="logo da empresa riot games" />
             <nav>
              {/* <Link to="/" className="link-header">Home</Link> 
              <Link to="/sobre" className="link-header">Sobre</Link> 
@@ -32,7 +32,7 @@ function Header(){
              <Rota rota={"/agentes"} ativo={rotaAtiva === '/agentes'} onClick={handleClick} nomeRota={"Agentes"}/>
              <Rota rota={"/mapas"} ativo={rotaAtiva === '/mapas'} onClick={handleClick} nomeRota={"Mapas"}/>
             </nav>
-            <img src={require('../assets/logo-valorant.png')} alt="logo do jogo valorant"></img>
+            <img src={require('../assets/logo-valorant.png')} alt="logo do jogo valorant" />
         </header>
     )
 }  

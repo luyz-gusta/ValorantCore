@@ -5,13 +5,16 @@
  *  Versão: 1.0
  **************************************************************************************/
 
+import ContainerMapas from '../../components/ContainerMapas';
+import '../../css/mapas.css'
+
 function Mapas() {
-    return (
-        <div>
-          <h1>Mapas</h1>
-        </div>
-    );
-  }
-  
-  export default Mapas;
-  
+  return (
+    <div className="mapas">
+      <h1 className="titulo-mapas">Mapas</h1>
+      <ContainerMapas />
+    </div> 
+  );
+}
+
+export default Mapas;
