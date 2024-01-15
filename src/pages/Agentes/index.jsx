@@ -5,12 +5,13 @@
  *  Versão: 1.0
  **************************************************************************************/
 
+import ContainerAgentes from "../../components/ContainerAgentes";
 
 function Agentes() {
   return (
-      <div>
-        <h1>Agentes</h1>
-        
+      <div className="agentes">
+        <h1 className="titulo-agentes">Agentes</h1>
+        <ContainerAgentes />
       </div>
   );
 }
