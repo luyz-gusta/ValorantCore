@@ -1,0 +1,49 @@
+.sec-requisitos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.nome-requisito {
+    color: var(--black-default);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.valor-requisito {
+    color: var(--gray-text);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.container-requisitos{
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    padding-left: 38px;
+    width: 100%;
+}
+
+.lista-requisitos{
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+    gap: 4px;
+}
+
+.requisito {
+    list-style: disc;
+}
+
+.txt{
+    display: flex;
+}
+
+.box-requisito{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}

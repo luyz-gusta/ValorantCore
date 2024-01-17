@@ -15,10 +15,11 @@ const ContainerAgentes = () => {
     useEffect(() => {
         const fetchDataMaps = async () => {
             try {
-                const response = await axios.get('https://valorant-api.com/v1/agents?language=pt-BR');
-                setDadosAgentes(response.data);
+                const response = await axios.get('https://valorant-api.com/v1/agents?language=pt-BR')
+                console.log(response.data)
+                setDadosAgentes(response.data)
             } catch (error) {
-                console.error('Erro ao buscar dados:', error);
+                console.error('Erro ao buscar dados:', error)
             }
         }
 
@@ -28,14 +29,11 @@ const ContainerAgentes = () => {
     return (
         <div className="container-agentes">
             {
+                // eslint-disable-next-line array-callback-return
                 dadosAgentes.data ? dadosAgentes.data.map((agente) => {
                     if (agente.role != null) {
                         return (
                             <CardAgente key={agente.uuid} agente={agente} />
-                        )
-                    }else{
-                        return(
-                            <></>
                         )
                     }
                 }) : []

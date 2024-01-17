@@ -141,3 +141,11 @@
     --button-text-color-hover: #ece8e1;
     --button-bits-color-hover: #ece8e1;
 }
+
+.btn--rose {
+    --button-background-color: var(--background-color);
+    --button-text-color: var(--highlight-color);
+    --button-inner-border-color: var(--highlight-color);
+    --button-text-color-hover: #ece8e1;
+    --button-bits-color-hover: #ece8e1;
+}

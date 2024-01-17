@@ -7,6 +7,8 @@
 
 import TextoSobre from "./TextoSobre";
 import TituloSobre from "./TituloSobre";
+import '../css/sec-requisitos.css'
+import ContainerRequisitos from "./ContainerRequisitos";
 
 function SectionRequisitos() {
     return (
@@ -22,6 +24,7 @@ function SectionRequisitos() {
                     text={'A seguir, você verá quais requisitos para rodar Valorant, tanto os mínimos quanto os recomendados. Além destes requisitos de Valorant, vamos oferecer também uma opção de requisitos premium para quem realmente quiser extrair o máximo do game. A cada lista de especificações, colocaremos também uma sugestão de notebook que cumprirá as exigências para rodar o game.'}
                 />
             </div>
+            <ContainerRequisitos />
         </section>
     )
 }

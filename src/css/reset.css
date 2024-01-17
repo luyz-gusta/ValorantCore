@@ -7,6 +7,7 @@
 
     --red-primary: #FF3744;
     --red-second: #FF4655;
+    --red-box: #FF7562;
 
     --blue-dark-primary: #141E29;
 
@@ -30,6 +31,7 @@ ul, li{
 
 #root{
     height: 100vh;
+    
 }
 
 
@@ -52,4 +54,22 @@ header, footer {
     height: auto;
 
     overflow-y: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--red-second);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--gray-text);
 }

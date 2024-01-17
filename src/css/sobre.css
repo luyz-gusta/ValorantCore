@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 20vw 79vw;
     height: auto;
-
 }
 
 aside {
@@ -54,6 +53,7 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .3s ease-in-out;
 }
 
 .opcao:hover {
@@ -78,36 +78,9 @@ aside {
     border-radius: 0px 0px 15px 15px;
 }
 
-.sec-inicio {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.titulo-inicio {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-    color: var(--black-default);
-}
-
 .textos {
     display: flex;
     flex-direction: column;
-}
-
-.texto-sobre {
-    color: var(--gray-text);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-
-.sec-oque{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
 }
 
 .box {
@@ -127,4 +100,23 @@ aside {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 500;
+}
+
+.subtitulo-sobre {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.subtitulo-sobre h2 {
+    color: var(--black-default);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.box-subtitulo{
+    width: 10px;
+    height: 40px;
+    background-color: var(--red-box);
 }

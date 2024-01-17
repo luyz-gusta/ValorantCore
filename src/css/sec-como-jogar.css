@@ -1,0 +1,9 @@
+.sec-como-jogar{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.txt-sec{
+    gap: 18px;
+}

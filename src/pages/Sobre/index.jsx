@@ -5,8 +5,10 @@
  *  Versão: 1.0
  **************************************************************************************/
 import MenuSobre from '../../components/MenuSobre';
+import SectionComoJogar from '../../components/SectionComoJogar';
 import SectionInicio from '../../components/SectionInicio';
 import SectionOque from '../../components/SectionOque';
+import SectionRequisitos from '../../components/SectionRequisitos';
 import '../../css/sobre.css'
 
 function Sobre() {
@@ -18,8 +20,8 @@ function Sobre() {
       <div className="main-sobre">
         <SectionInicio />
         <SectionOque />
-        <section className="sec-requisitos"></section>
-        <section className="sec-como-jogar"></section>
+        <SectionRequisitos />
+        <SectionComoJogar />
       </div>
     </div>
   );

@@ -1,0 +1,12 @@
+.texto-sobre {
+    color: var(--gray-text);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sec-oque{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

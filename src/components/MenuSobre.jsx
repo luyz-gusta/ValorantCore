@@ -10,9 +10,9 @@ function MenuSobre() {
         <nav className="menu-sobre">
             <ul className="options">
                 <li className="item"><a href="#sec-inicio" className="opcao" aria-label='#' id='inicio'>Início</a></li>
-                <li className="item"><a href="www" className="opcao" aria-label='#' id='oque'>O que é</a></li>
-                <li className="item"><a href="www" className="opcao" aria-label='#' id='requisitos'>Requisitos</a></li>
-                <li className="item"><a href="www" className="opcao" aria-label='#' id='como-jogar'>Como Jogar</a></li>
+                <li className="item"><a href="#sec-oque" className="opcao" aria-label='#' id='oque'>O que é</a></li>
+                <li className="item"><a href="#sec-requisitos" className="opcao" aria-label='#' id='requisitos'>Requisitos</a></li>
+                <li className="item"><a href="#sec-como-jogar" className="opcao" aria-label='#' id='como-jogar'>Como Jogar</a></li>
             </ul>
         </nav>
     )

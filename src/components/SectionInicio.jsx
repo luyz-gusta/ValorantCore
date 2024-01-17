@@ -6,6 +6,7 @@
  **************************************************************************************/
 
 import TextoSobre from "./TextoSobre";
+import '../css/sec-inicio.css'
 
 function SectionInicio() {
     return (

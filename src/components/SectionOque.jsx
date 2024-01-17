@@ -7,6 +7,7 @@
 
 import TextoSobre from "./TextoSobre";
 import TituloSobre from "./TituloSobre";
+import '../css/sec-oque.css'
 
 function SectionOque() {
     const videoUrl = 'https://www.youtube.com/embed/ZmiQUOP-ibA'; // Link de incorporação do YouTube
