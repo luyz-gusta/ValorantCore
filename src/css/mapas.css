@@ -107,3 +107,16 @@
     flex-wrap: wrap;
     padding-top: 40px;
 }
+
+@media(max-width: 1024px) {
+    .titulo-mapas{
+        font-size: 2.5rem;
+    }
+}
+
+
+@media(max-width: 420px) {
+    .mapas{
+        padding: 40px 1rem;
+    }
+}

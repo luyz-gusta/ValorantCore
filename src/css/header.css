@@ -1,16 +1,29 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10rem;
+
+    width: 100%;
+    height: 10vh;
+    background-color: var(--black-primary);
+}
+
 nav {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 1.5rem;
+}
+
+.link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    transition: all .5s;
 }
 
 .link-header-disable {
     color: var(--white-primary);
-    font-family: 'Montserrat', sans-serif;
-
-    font-size: 32px;
-    font-weight: 400;
-    transition: all .5s;
 }
 
 .link-header-enable {
@@ -18,11 +31,6 @@ nav {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    font-family: 'Montserrat', sans-serif;
-    
-    font-size: 32px;
-    font-weight: 400;
-    transition: all .5s;
 }
 
 
@@ -31,4 +39,64 @@ nav {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+@media(max-width: 1024px) {
+    header{
+        padding: 0px 5rem;
+    }
+
+    .link{
+        font-size: 1.85rem;
+    }
+
+    header > img{
+        width: 6.3rem;
+        height: auto;
+    }
+}
+
+@media(max-width: 768px) {
+    header{
+        padding: 0 3rem;
+    }
+
+    .link{
+        font-size: 1.5rem;
+    }
+
+    header > img{
+        width: 5.5rem;
+        height: auto;
+    }
+}
+
+@media(max-width: 640px) {
+    header{
+        padding: 0 2rem;
+    }
+
+    .link{
+        font-size: 1.25rem;
+    }
+
+    header > img{
+        width: 5.0rem;
+        height: auto;
+    }
+}
+
+@media(max-width: 640px) {
+    header{
+        padding: 0 2rem;
+    }
+
+    .link{
+        font-size: 1.25rem;
+    }
+
+    header > img{
+        width: 5.0rem;
+        height: auto;
+    }
 }

@@ -149,3 +149,33 @@
     --button-text-color-hover: #ece8e1;
     --button-bits-color-hover: #ece8e1;
 }
+
+@media(max-width: 1024px) {
+    .btn__inner{
+        padding: 1rem 1.75rem;
+    }
+
+    .btn__content{
+        font-size: 0.875rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .btn__inner{
+        padding: 0.875rem 1.5rem;
+    }
+
+    .btn__content{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 420px) {
+    .btn__inner{
+        padding: 0.75rem 1rem;
+    }
+
+    .btn__content{
+        font-size: 0.7rem;
+    }
+}

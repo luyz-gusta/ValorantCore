@@ -26,7 +26,67 @@
     width: 680px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     gap: 28px;
+}
+
+@media(max-width: 1024px) {
+    .home {
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .texto {
+        font-size: 1.2rem;
+        width: 35rem;
+    }
+
+    .home {
+        gap: 4rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .titulo {
+        font-size: 2.8rem;
+    }
+
+    .texto {
+        font-size: 1.1rem;
+        width: 30rem;
+    }
+}
+
+@media(max-width: 640px) {
+    .home {
+        padding-bottom: 6.25rem;
+        padding-left: 1.5rem;
+    }
+}
+
+@media(max-width: 540px) {
+    .titulo{
+        font-size: 2.5rem;
+    }
+
+    .texto{
+        font-size: 1rem;
+        width: 90vw;
+    }
+}
+
+@media(max-width: 420px) {
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .texto{
+        font-size: 0.95rem;
+        width: 90vw;
+    }
 }

@@ -16,15 +16,15 @@ function Footer() {
                 <div className="divisoria"></div>
                 <img src={require('../assets/logo-valorant.png')} alt="logo do jogo valorant" className="logo-valorant" />
             </div>
-            <strong className="texto-footer">© ValorantHub 2024 | Luiz Gustavo</strong>
+            <strong className="texto-footer">© Luiz Gustavo | 2024</strong>
             <address className="social-media">
                 <a href="https://github.com/luyz-gusta" className="icon-media">
                     <FaGithub />
                 </a>
-                <a href="https://github.com/luyz-gusta" className="icon-media">
+                <a href="https://www.linkedin.com/in/luyz-gusta/" className="icon-media">
                     <FaLinkedinIn />
                 </a>
-                <a href="https://github.com/luyz-gusta" className="icon-media">
+                <a href="https://www.instagram.com/luyz.gusta/" className="icon-media">
                     <FaInstagram />
                 </a>
             </address>

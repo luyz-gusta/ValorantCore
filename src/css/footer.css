@@ -1,3 +1,14 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 55px;
+
+    width: 100%;
+    height: 10vh;
+    background-color: var(--black-primary);
+}
+
 .logos {
     display: flex;
     justify-content: center;
@@ -42,4 +53,88 @@
 
 .icon-media:hover{
     color: var(--red-primary);
+}
+
+@media(max-width: 1024px) {
+    .logos{
+        gap: 1rem;
+    }
+
+    .logo-riot{
+        width: 8vw;
+        height: auto;
+    }
+
+    .divisoria{
+        width: 2px;
+        height: 4vh;
+    }
+
+    .logo-valorant{
+        width: 3vw;
+        height: auto;
+    }
+
+    .social-media{
+        gap: 1.8rem;
+    }
+
+    .texto-footer{
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 768px) {
+    footer{
+        padding: 0px 40px;
+    }
+    
+    .social-media{
+        gap: 1rem;
+    }
+}
+
+@media(max-width: 640px) {
+    footer{
+        height: 100px;
+    }
+
+    .social-media{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icon-media{
+        font-size: 1.1rem;
+    }
+
+    .texto-footer{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 540px) {
+    footer{
+        padding: 0px 28px;
+    }
+
+    .texto-footer{
+        font-size: 1rem;
+    }
+
+    .logo-riot{
+        width: 10vw;
+        height: auto;
+    }
+
+    .logo-valorant{
+        width: 4vw;
+        height: auto;
+    }
+}
+
+@media(max-width: 420px) {
+    footer{
+        padding: 0px 20px;
+    }
 }
