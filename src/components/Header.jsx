@@ -6,12 +6,13 @@
  **************************************************************************************/
 
 import '../css/header.css'
-import React, {useState} from "react";
+import '../css/menu.css'
+import React, { useState } from "react";
 import Rota from "./Rota";
 import { useLocation } from 'react-router-dom';
 
 
-function Header(){
+function Header() {
     const rotaAtual = useLocation()
     const [rotaAtiva, setRotaAtiva] = useState(rotaAtual.pathname)
 
@@ -19,17 +20,24 @@ function Header(){
         setRotaAtiva(rota)
     }
 
-    return(
+    return (
         <header>
             <img src={require('../assets/logo-riot.png')} alt="logo da empresa riot games" />
             <nav>
-             <Rota rota={"/"} ativo={rotaAtiva === '/'} onClick={handleClick} nomeRota={"Home"}/>
-             <Rota rota={"/sobre"} ativo={rotaAtiva === '/sobre'} onClick={handleClick} nomeRota={"Sobre"}/>
-             <Rota rota={"/agentes"} ativo={rotaAtiva === '/agentes'} onClick={handleClick} nomeRota={"Agentes"}/>
-             <Rota rota={"/mapas"} ativo={rotaAtiva === '/mapas'} onClick={handleClick} nomeRota={"Mapas"}/>
+                <div className="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <Rota rota={"/"} ativo={rotaAtiva === '/'} onClick={handleClick} nomeRota={"Home"} />
+                    <Rota rota={"/sobre"} ativo={rotaAtiva === '/sobre'} onClick={handleClick} nomeRota={"Sobre"} />
+                    <Rota rota={"/agentes"} ativo={rotaAtiva === '/agentes'} onClick={handleClick} nomeRota={"Agentes"} />
+                    <Rota rota={"/mapas"} ativo={rotaAtiva === '/mapas'} onClick={handleClick} nomeRota={"Mapas"} />
+                </ul>
             </nav>
         </header>
     )
-}  
+}
 
 export default Header

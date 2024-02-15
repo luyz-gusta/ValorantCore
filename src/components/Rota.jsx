@@ -8,11 +8,13 @@
 import { Link } from "react-router-dom"
 import '../css/header.css'
 
-function Rota({ rota, ativo, nomeRota, onClick}) {
+function Rota({ rota, ativo, nomeRota, onClick }) {
     const classeBotao = ativo ? 'link-header-enable link' : 'link-header-disable link';
 
     return (
-        <Link to={rota} className={classeBotao} onClick={() => onClick(rota)}>{nomeRota}</Link>
+        <li>
+            <Link to={rota} className={classeBotao} onClick={() => onClick(rota)}>{nomeRota}</Link>
+        </li>
     )
 }
 

@@ -40,10 +40,21 @@
 
 .txt{
     display: flex;
+    gap: 4px;
 }
 
 .box-requisito{
     display: flex;
     flex-direction: column;
     gap: 18px;
+}
+
+@media(max-width: 640px){
+    .container-requisitos{
+        padding-left: 8px;
+    }
+
+    .sec-requisitos{
+        gap: 24px;
+    }
 }

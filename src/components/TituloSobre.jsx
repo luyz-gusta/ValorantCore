@@ -9,7 +9,7 @@ const TituloSobre = ({ titulo }) => {
     return (
         <div className="titulo-sobre">
             <div className="box"></div>
-            <h2>{titulo}</h2>
+            <h2 className="titulo-inicio">{titulo}</h2>
         </div>
     )
 }

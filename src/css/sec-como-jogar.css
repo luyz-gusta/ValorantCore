@@ -7,3 +7,10 @@
 .txt-sec{
     gap: 18px;
 }
+
+@media(max-width: 640px) {
+    .sec-como-jogar{
+        gap: 24px;
+    }
+}
+

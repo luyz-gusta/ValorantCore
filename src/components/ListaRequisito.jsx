@@ -14,7 +14,7 @@ const ListaRequisito = ({subtitulo, processador, placaVideo, memoriaRam, armazen
             <SubTituloSobre subtitulo={subtitulo}/>
             <ul className="lista-requisitos">
                 <Requisito nomeRequisito="Processador" valorRequisito={processador} />
-                <Requisito nomeRequisito="Placa de vídeo" valorRequisito={placaVideo} />
+                <Requisito nomeRequisito="GPU" valorRequisito={placaVideo} />
                 <Requisito nomeRequisito="Memória RAM" valorRequisito={memoriaRam} />
                 <Requisito nomeRequisito="Armazenamento disponível" valorRequisito={armazenamento} />
             </ul>

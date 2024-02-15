@@ -19,6 +19,13 @@ aside {
     gap: 70px;
 }
 
+.texto-sobre {
+    color: var(--gray-text);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .menu-sobre {
     position: fixed;
     width: 256px;
@@ -30,7 +37,7 @@ aside {
 .item {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 8vh;
     justify-content: center;
     align-items: center;
 }
@@ -46,7 +53,7 @@ aside {
 .opcao {
     color: var(--gray-text);
     font-family: Montserrat;
-    font-size: 32px;
+    font-size: clamp(1.25rem, 0.3929rem + 1.3393vw, 2rem);
     font-weight: 500;
     width: 100%;
     height: 100%;
@@ -115,8 +122,123 @@ aside {
     font-weight: 500;
 }
 
-.box-subtitulo{
+.box-subtitulo {
     width: 10px;
     height: 40px;
     background-color: var(--red-box);
+}
+
+@media(max-width: 1440px) {
+    .sobre {
+        grid-template-columns: 18vw 81vw;
+    }
+
+    .menu-sobre {
+        width: 15vw;
+        height: auto;
+    }
+
+    .titulo-sobre h2 {
+        font-size: 2.1rem;
+    }
+
+    .box {
+        height: 40px;
+    }
+
+    .texto-sobre, .valor-requisito, .nome-requisito {
+        font-size: 1.15rem;
+    }
+}
+
+@media(max-width: 1024px) {
+    .sobre {
+        grid-template-columns: 100vw;
+    }
+
+    .main-sobre {
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 24px 32px 32px 32px;
+    }
+
+    .sobre aside {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .titulo-sobre h2 {
+        font-size: 1.8rem;
+    }
+
+    .subtitulo-sobre h2 {
+        font-size: 1.6rem;
+    }
+
+    .box-subtitulo{
+        width: 8px;
+        height: 32px;
+    }
+
+    .texto-sobre, .valor-requisito, .nome-requisito {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 640px) {
+    .titulo-sobre h2 {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        height: 32px;
+        width: 8px;
+    }
+
+    .subtitulo-sobre h2 {
+        font-size: 1.2rem;
+    }
+
+    .box-subtitulo{
+        width: 6px;
+        height: 26px;
+    }
+
+    .texto-sobre, .valor-requisito, .nome-requisito {
+        font-size: .9rem;
+    }
+
+    .main-sobre{
+        gap: 48px;
+    }
+}
+
+@media(max-width: 540px){
+    .main-sobre{
+        padding: 20px 18px 20px 18px;
+    }    
+
+    .titulo-sobre h2 {
+        font-size: 1.3rem;
+    }
+
+    .box {
+        height: 26px;
+        width: 8px;
+    }
+
+    .subtitulo-sobre h2 {
+        font-size: 1.1rem;
+    }
+
+    .box-subtitulo{
+        width: 6px;
+        height: 26px;
+    }
+
+    .texto-sobre, .valor-requisito, .nome-requisito {
+        font-size: .8rem;
+    }
 }

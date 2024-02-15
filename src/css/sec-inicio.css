@@ -10,3 +10,22 @@
     font-weight: 500;
     color: var(--black-default);
 }
+
+@media(max-width: 1440px) {
+    .titulo-inicio{
+        font-size: 2.1rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .titulo-inicio {
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width: 640px) {
+    .titulo-inicio {
+        font-size: 1.5rem;
+    }
+}
+
