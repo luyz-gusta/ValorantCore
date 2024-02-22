@@ -15,8 +15,13 @@ import { useLocation } from 'react-router-dom';
 function Header() {
     const rotaAtual = useLocation()
     const [rotaAtiva, setRotaAtiva] = useState(rotaAtual.pathname)
+    const [menuOpen, setMenuOpen] = useState(false)
 
     const handleClick = (rota) => {
+        if(menuOpen){
+            setMenuOpen(false)
+        }
+
         setRotaAtiva(rota)
     }
 
@@ -24,12 +29,14 @@ function Header() {
         <header>
             <img src={require('../assets/logo-riot.png')} alt="logo da empresa riot games" />
             <nav>
-                <div className="menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div className="menu" onClick={() => {
+                    setMenuOpen(!menuOpen)
+                }}>
+                    <span className={menuOpen ? "menu-span clicked" : "menu-span unclicked"}></span>
+                    <span className={menuOpen ? "menu-span clicked" : "menu-span unclicked"}></span>
+                    <span className={menuOpen ? "menu-span clicked" : "menu-span unclicked"}></span>
                 </div>
-                <ul>
+                <ul className={menuOpen ? "open menu-ul" : "menu-ul"}>
                     <Rota rota={"/"} ativo={rotaAtiva === '/'} onClick={handleClick} nomeRota={"Home"} />
                     <Rota rota={"/sobre"} ativo={rotaAtiva === '/sobre'} onClick={handleClick} nomeRota={"Sobre"} />
                     <Rota rota={"/agentes"} ativo={rotaAtiva === '/agentes'} onClick={handleClick} nomeRota={"Agentes"} />

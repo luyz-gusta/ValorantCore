@@ -36,6 +36,7 @@
 
 .requisito {
     list-style: disc;
+    display: flex;
 }
 
 .txt{

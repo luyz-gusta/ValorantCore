@@ -30,7 +30,9 @@ const ContainerMapas = () => {
             {
                 dadosMapas.data ? dadosMapas.data.map((mapa) => {
                     return (
-                        <CardMapa key={mapa.uuid} mapa={mapa}/>
+                        <div className="bg-card">
+                            <CardMapa key={mapa.uuid} mapa={mapa}/>
+                        </div>
                     )
                 }) : []
             }
