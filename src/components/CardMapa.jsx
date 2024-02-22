@@ -12,8 +12,8 @@ function CardMapa({mapa}) {
             <strong className='nome-mapa'>{mapa.displayName}</strong>
             <div className="map-hover">
                 <div className="maps">
-                    <img src={mapa.displayIcon ? mapa.displayIcon : require('../assets/no-image-big.png')} alt="mapa" className='maior'/>
-                    <img src={mapa.listViewIconTall ? mapa.listViewIconTall : require('../assets/no-image-small.png')} alt="mini-map" className='menor'/>
+                    <img src={mapa.displayIcon ? mapa.displayIcon : require('../assets/no-image-big.webp')} alt="mapa" className='maior'/>
+                    <img src={mapa.listViewIconTall ? mapa.listViewIconTall : require('../assets/no-image-small.webp')} alt="mini-map" className='menor'/>
                 </div>
                 <div className='name-maps'>{mapa.displayName}</div>
             </div>

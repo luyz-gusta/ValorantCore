@@ -27,7 +27,7 @@ function Header() {
 
     return (
         <header>
-            <img src={require('../assets/logo-riot.png')} alt="logo da empresa riot games" />
+            <img src={require('../assets/valorant-core-big.png')} alt="logo da empresa riot games" />
             <nav>
                 <div className="menu" onClick={() => {
                     setMenuOpen(!menuOpen)

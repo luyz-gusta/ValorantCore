@@ -1,5 +1,5 @@
 /**************************************************************************************
- *  Objetivo: ValorantHub - Index que chama o component principal
+ *  Objetivo: ValorantCore - Index que chama o component principal
  *  Autor: Luiz Gustavo
  *  Data: 12/01/2023
  *  Versão: 1.0

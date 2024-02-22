@@ -22,6 +22,12 @@
     width: 250px;
     height: 435px;
     border: 3px solid var(--black-default);
+    transition: all 0.5s;
+}
+
+.card-agente:hover{
+    width: 265px;
+    height: 460px;
 }
 
 .categoria-agente {
@@ -52,8 +58,10 @@
 
 .img-agente {
     opacity: 1;
-    width: 400px;
+    width: 100%;
     height: auto;
+    background-size: cover;
+    background-position: center;
 }
 
 .nome-agente {

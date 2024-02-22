@@ -6,8 +6,9 @@
  **************************************************************************************/
 
 import '../css/agentes.css'
+import ImagemAgente from './ImagemAgente'
 
-const CardAgente = ({ agente }) => {
+const CardAgente = ({ agente, key }) => {
     const style_bloco = {
         background: `linear-gradient(180deg, #${agente.backgroundGradientColors[2]} 0%, #${agente.backgroundGradientColors[0]} 89%)`
     }
@@ -19,9 +20,10 @@ const CardAgente = ({ agente }) => {
 
 
     return (
-        <div className='card-agente'>
+        <div className='card-agente' key={key}>
             <div className='bloco-agente' style={style_bloco}>
-                <img src={agente.fullPortrait ? agente.fullPortrait : require('../assets/jett.png')} alt="jett" className='img-agente' />
+                {/* <img src={agente.fullPortrait} alt={agente.displayName} className='img-agente' /> */}
+                <ImagemAgente imagem={agente.fullPortrait}/>
                 <strong style={style_nome_agente} className='nome-agente'>{agente.displayName}</strong>
             </div>
             <div className="categoria-agente">{agente.role.displayName}</div>
