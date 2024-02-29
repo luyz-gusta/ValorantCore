@@ -6,7 +6,7 @@ Seja bem-vindo ao ValorantCore, o seu destino final para tudo relacionado ao emo
 
 - [Link do site](https://valoranthub-web.netlify.app/)
 
-## Tecnologias utilizadas
+## Principais Tecnologias utilizadas
 
 - React.js
 - Axios
